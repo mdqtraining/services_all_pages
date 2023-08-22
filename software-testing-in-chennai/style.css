@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F4FE;
+}
+.navbar{
+    position: fixed;
+    background-color: #ECEAF8;
+    z-index: 1000;
+    width: 100%;
+}
+.nav-link {
+  
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0px 15px;
+    display: inline-block;
+    position: relative;
+    color: black !important;
+}
+.button-a{
+    background-image:  linear-gradient(0deg, #48A7ED 0%, #0052D3 100%);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+}
+.intro{
+    background-image: linear-gradient(0deg, #48A7ED 0%, #0052D3 100%);
+    padding-top: 100px;
+   
+}
+.intro h1{
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    font-size: 40px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro p{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-wave{
+    margin-bottom: -1px;
+}
+.para_link{
+    color: #F4524D;
+    text-decoration: none;
+}
+.base_image{
+    padding-top: 150px;
+}
+.para{
+    font-size: 17px;
+    text-align: justify;
+}
+.second-con{
+    margin-top: 10%;
+    text-align: justify;
+}
+.second-con h2{
+    color: #064B96;
+    font-weight: 800;
+}
+.second-con p{
+    font-size: 18px;
+}
+.sec-mov-img{
+    padding-top: 1rem !important;
+    animation: moving_object 5s infinite linear;
+    width: 100%;
+}
+@keyframes moving_object{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.third-page{
+    padding-top: 5%;
+}
+.third-page .card{
+    width: 86%;
+    height: 100%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to top, #48A7ED , #0052D3);
+    border-radius: 30px;
+    margin-bottom: -7%;
+}
+.third-page h1{
+    color: white;
+    font-weight: 700;
+}
+.third-page p{
+    color: white;
+    font-size: 18px;
+}
+.third-page .outer button{
+    background-color: white;
+    color: #064B96;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 25px;
+    border: none;
+    border-radius:  30px;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .25s ease-out;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 1.5px;
+}
+.text-but{
+    font-size: 16px;
+    line-height: 30px; 
+    color: black;
+    transition: all .6s ease-out;
+}
+.text-but:hover {
+    color: white;  
+  }
+.third-page .outer button:hover{
+    background-color: #064B96;
+    color: white;
+    background-position: left bottom;
+}
+.last{
+    background-image: linear-gradient(to top, #48A7ED , #0052D3);
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.last-first p{
+    padding-top: 0px;
+}
+.last-second{
+    list-style: none;
+    margin-bottom: 5%;
+}
+.last-second h4{
+    font-weight: 600;
+}
+.last-second ul{
+    list-style: none;
+    line-height: 35px;
+    color: white;
+}
+.last-second ul li a{
+    color: white;
+    text-decoration: none;
+}
+.last-second ul li a:hover{
+    color: white;
+}
+.last-third{
+    margin-top: 3%;
+}
+.lasthead{
+    font-weight: 600;
+}
+.lastpara{
+    color: white;
+}
+.last-third a{
+    color: white;
+    text-decoration: none;
+}
+.last-third a:hover{
+    color: white;
+}
+.soci-last{
+    display: flex !important;
+    align-items: center;
+}
+.so-icon{
+    margin-right: 20px;
+    /* background-color: black; */
+    padding: 5px 10px;
+    border-radius: 100%;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+}
+.design-but button{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to top, #48A7ED , #0052D3);
+}
+  .bw-head{
+    color: #064B96;
+  }
+  .best-work ul li a{
+    color: #064B96;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .best-work ul li a:hover{
+   color: black;
+  }
+.lastline {
+    color: white;
+    text-align: end;
+}
+.lastline a {
+    color:white;
+    text-decoration: none;
+}
+
+.lastline a:hover {
+    color: white;
+}
+
+.copyrights {
+    background-color: black;
+    padding-top: 1.5%;
+    padding-bottom: 0.7%;
+}
