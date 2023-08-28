@@ -36,8 +36,15 @@
         .dropdown-item:hover{
             transition: .4s all;
             translate: 8px;
-            background-color: white !important;
+            background-color: transparent;
         }
+        @media (max-width: 1000px) { /* Adjust the breakpoint as needed */
+        .dro_down {
+            max-height: 300px !important; /* Set the maximum height for the dropdown menu */
+            overflow-y: auto;
+            margin-left: 200px;/* Add vertical scroll for overflow content */
+        }
+    }
     </style>
     <div class="logo">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,22 +57,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
-                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -500px; line-height: 30px;">
+                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -200px; line-height: 30px;">
                                 <div class="row">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-9">
+                                        <div class="dro_down">
                                         <div class="row">
                                             <div class="col-lg-4">
                                 <li><a class="dropdown-item nav_head pt-4" href="../website-designing-and-development-company-in-chennai/">Web Development</a></li>
@@ -109,8 +114,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#process">Process</a>
@@ -120,6 +129,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="careers">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +154,7 @@
             </path>
         </svg>
     </div>
-    
+
     <div class="second-page">
         <div class="container-fluid px-4">
             <p class="para">MDQuality Apps is the leading <a class="para_link"
@@ -208,7 +220,7 @@
                     </div>
                     <h4 style="color: #064B96; font-weight: 600;">Our Work Process</h4>
                     <p class="para">If you are looking for the <b>best DOTNET website development company in Chennai?</b> Then you are at the right website. Our team of experts provides the best DOTNET website for your business. We also provide the <a class="para_link" href="">best angular JS web development service in Chennai</a>.</p>
-                    
+
                     <h4 style="color: #064B96; font-weight: 600;">Full Cycle Development</h4>
                     <p class="para">Our professional DOTNET developers understood your business requirements based on that they develop the scalable and highly flexible DOTNET website for you.</p>
 
@@ -219,9 +231,9 @@
                     <p class="para">Partnership with us will empower you to appreciate colossal benefits in different ways. We keep up our benchmarks while providing our services to the customers. We have specialists who are talented at it.</p>
 
                     <h4 style="color: #064B96; font-weight: 600;">Certified Developers and Professionals</h4>
-                    <p class="para">Our professionals are trained DotNet developers So we will complete your projects in a sufficient way.</p> 
+                    <p class="para">Our professionals are trained DotNet developers So we will complete your projects in a sufficient way.</p>
                     <p class="para">Do you have an idea to create a DOTNET website for your business? Just ping us at <a class="para_link" href="mailto:impart@mdqualityapps.com">impart@mdqualityapps.com</a> or call us at <a class="para_link" href="tel:+91 8838995745">+91 8838995745</a> to get the quotation for your website development proposal. It’s your turn!! Hurry up!! We also provide the following services also. Those are <a class="para_link" href="">WordPress website development</a>,<a class="para_link" href=""> Digital marketing services</a>, Website maintenance, software development services, etc.</p>
-                
+
     <div class="third-page">
         <div class="card">
             <div class="card-body">

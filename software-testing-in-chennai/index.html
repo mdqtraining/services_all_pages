@@ -38,8 +38,15 @@
         .dropdown-item:hover{
             transition: .4s all;
             translate: 8px;
-            background-color: white !important;
+            background-color: transparent;
         }
+        @media (max-width: 1000px) { /* Adjust the breakpoint as needed */
+        .dro_down {
+            max-height: 300px !important; /* Set the maximum height for the dropdown menu */
+            overflow-y: auto;
+            margin-left: 200px;/* Add vertical scroll for overflow content */
+        }
+    }
     </style>
     <div class="logo">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -52,22 +59,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
-                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -500px; line-height: 30px;">
+                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -200px; line-height: 30px;">
                                 <div class="row">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-9">
+                                        <div class="dro_down">
                                         <div class="row">
                                             <div class="col-lg-4">
                                 <li><a class="dropdown-item nav_head pt-4" href="../website-designing-and-development-company-in-chennai/">Web Development</a></li>
@@ -111,8 +116,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#process">Process</a>
@@ -122,6 +131,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="careers">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -155,7 +167,7 @@
                 but it’s also our passion to help our client business prosper.</p>
             <p class="para">MDQuality Apps Solutions provides <a class="para_link" href="">full-cycle testing and quality assurance</a> services for desktop and mobile applications. Expert test engineers are an important part of every project we work on to make sure the deliverables meet the most stringent quality standards. We also leverage our QA talent pool to provide standalone testing services by means of custom-tailored dedicated QA teams. A dedicated team reports directly to the client, and works exclusively on a single project, closely collaborating with the client’s staff. This approach has proven very effective for mid- and long-term projects that require ultimate resource scalability and product knowledge retention.</p>
             <p class="para">Are you looking for a <a class="para_link" href="">Software testing service provider in Chennai?</a> We help you to improve your IT application quality.</p>
-            
+
 
             <h5 class="py-3" style="color: #064B96; font-weight: 600;"> Requirement analysis:</h5>
             <p class="para">Requirements received from product owner are reviewed for completeness and to identify andy ambiguities.</p>

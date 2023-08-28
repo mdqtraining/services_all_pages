@@ -36,8 +36,15 @@
         .dropdown-item:hover{
             transition: .4s all;
             translate: 8px;
-            background-color: white !important;
+            background-color: transparent;
         }
+        @media (max-width: 1000px) { /* Adjust the breakpoint as needed */
+        .dro_down {
+            max-height: 300px !important; /* Set the maximum height for the dropdown menu */
+            overflow-y: auto;
+            margin-left: 200px;/* Add vertical scroll for overflow content */
+        }
+    }
     </style>
     <div class="logo">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,22 +57,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
-                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -500px; line-height: 30px;">
+                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -200px; line-height: 30px;">
                                 <div class="row">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-9">
+                                        <div class="dro_down">
                                         <div class="row">
                                             <div class="col-lg-4">
                                 <li><a class="dropdown-item nav_head pt-4" href="../website-designing-and-development-company-in-chennai/">Web Development</a></li>
@@ -109,8 +114,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#process">Process</a>
@@ -120,6 +129,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="careers">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +154,7 @@
             </path>
         </svg>
     </div>
-    
+
     <div class="second-page">
         <div class="container-fluid px-4">
             <p class="para">MDQuality Apps is the leading <a class="para_link"
@@ -159,7 +171,7 @@
                     <li><img width="20" height="20" src="https://img.icons8.com/sf-regular/96/tiktok-verified-account.png" alt="tiktok-verified-account"/> Customer support and service becomes easy with the application of mobile apps.</li>
                     <li><img width="20" height="20" src="https://img.icons8.com/sf-regular/96/tiktok-verified-account.png" alt="tiktok-verified-account"/> Brand recognition and inspires brand loyalty.</li>
                 </ul>
-                
+
                 <h2 class="py-3" style="color: #064B96;">Android App Development :</h2>
                 <p class="para">Android is an open-source operating software for handheld devices. Android opened up the smartphone market to the world which has led to 1.6 billion users now. Android did exactly what Microsoft did to the personal computer industry.</p>
                 <p class="para"> There are a whopping 1.6 million different apps in the Google’s Play Store. This has made life easier for smartphone users every day. From job search to movie tickets apps can take care of everything with the touch of the screen. Every business venture used to have websites. Now they have apps.</p>
@@ -194,10 +206,15 @@
                 <div class="container">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide radius"><img class="radius" src="images/Card list screen.png" width="100%"></div>
-                            <div class="swiper-slide radius"><img class="radius" src="images/Home screen open card . transaction scroll.png" width="100%"></div>
                             <div class="swiper-slide radius"><img class="radius" src="images/Home screen open card.png" width="100%"></div>
                             <div class="swiper-slide radius"><img class="radius" src="images/Home screen.png" width="100%"></div>
+                            <div class="swiper-slide radius"><img class="radius" src="images/Home screen open card . transaction scroll.png" width="100%"></div>
+                            <div class="swiper-slide radius"><img class="radius" src="images/unnamed (1).jpg" width="100%"></div>
+                            <div class="swiper-slide radius"><img class="radius" src="images/unnamed (2).jpg" width="100%"></div>
+                            <div class="swiper-slide radius"><img class="radius" src="images/unnamed (3).jpg" width="100%"></div>
+                            <div class="swiper-slide radius"><img class="radius" src="images/unnamed (4).jpg" width="100%"></div>
+                            <div class="swiper-slide radius"><img class="radius" src="images/Card list screen.png" width="100%"></div>
+                            <div class="swiper-slide radius"><img class="radius" src="images/unnamed (5).jpg" width="100%"></div>
                         </div>
                         <script>
                             const reviewsCarouselOptions = {

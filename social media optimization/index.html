@@ -36,8 +36,15 @@
         .dropdown-item:hover{
             transition: .4s all;
             translate: 8px;
-            background-color: white !important;
+            background-color: transparent;
         }
+        @media (max-width: 1000px) { /* Adjust the breakpoint as needed */
+        .dro_down {
+            max-height: 300px !important; /* Set the maximum height for the dropdown menu */
+            overflow-y: auto;
+            margin-left: 200px;/* Add vertical scroll for overflow content */
+        }
+    }
     </style>
     <div class="logo">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,22 +57,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
-                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -500px; line-height: 30px;">
+                            <ul class="dropdown-menu py-4" aria-labelledby="navbarDropdown" style="width: 1000px; margin-left: -200px; line-height: 30px;">
                                 <div class="row">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-9">
+                                        <div class="dro_down">
                                         <div class="row">
                                             <div class="col-lg-4">
                                 <li><a class="dropdown-item nav_head pt-4" href="../website-designing-and-development-company-in-chennai/">Web Development</a></li>
@@ -109,8 +114,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#process">Process</a>
@@ -120,6 +129,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="careers">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +154,7 @@
             </path>
         </svg>
     </div>
-    
+
     <div class="second-page">
         <div class="container-fluid">
             <p class="para px-4">MDQuality Apps is the leading <a class="para_link"
@@ -211,7 +223,7 @@
                 <li><img width="20" height="20" src="https://img.icons8.com/external-others-inmotus-design/67/external-Star-logo-forms-and-trends-others-inmotus-design.png" alt="external-Star-logo-forms-and-trends-others-inmotus-design"/> Don't miss this opportunity to grow your business with SMO. Contact us today and let us help you make your mark on social media. </li>
                 </ul>
             </div>
-    
+
     <div class="third-page">
         <div class="card">
             <div class="card-body">
